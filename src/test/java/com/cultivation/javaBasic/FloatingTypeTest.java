@@ -1,6 +1,4 @@
 package com.cultivation.javaBasic;
-
-import jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
 import org.junit.jupiter.api.Test;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
@@ -69,9 +67,9 @@ class FloatingTypeTest {
         {
             return Double.isNaN(realNumber);
         }
-        catch(NotImplementedException e)
+        catch(NotImplementedException ex)
         {
-            throw e;
+            throw ex;
         }
 
     }
@@ -84,9 +82,9 @@ class FloatingTypeTest {
         {
             return Double.isInfinite(realNumber);
         }
-        catch(NotImplementedException e)
+        catch(NotImplementedException ex)
         {
-            throw e;
+            throw ex;
         }
     }
 }
