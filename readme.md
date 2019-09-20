@@ -16,9 +16,9 @@ Each repository contains a gradle java project with a number of unit tests. The 
 The 4 questions are:
 
 1. What is the knowledge point of the test? Where is the offical document to the knowledge point?
-1. Why the test failed at first?
-1. Why you corrected the test that way?
-1. Do you have further questions on this knowledge point?
+2. Why the test failed at first?
+3. Why you corrected the test that way?
+4. Do you have further questions on this knowledge point?
 
 ## Example
 
@@ -75,5 +75,67 @@ The hint indicates that we should not write concrete number here. So I should no
 
 You could run unit tests with the help of IntelliJ. But it is also possible to run unit test via command line: `./gradlew build`.
 
-If you just want to build your code without running test. Please use `./gradlew build -x test
-`
+If you just want to build your code without running test. Please use `./gradlew build -x test`
+
+# Answers
+
+## BooleanOperatorsTest.java
+1. What is the knowledge point of the test? Where is the offical document to the knowledge point?
+The knowledge point of the test is to be able to use boolean and bitwise logical operators.
+Official Document: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
+
+2. Why the test failed at first?
+The test failed due to incorrect expected values which do not match the actual boolean and bitwise conditions.
+
+3. Why you corrected the test that way?
+To handle all errors encountered and be able to use test logical operators.
+
+4. Do you have further questions on this knowledge point?
+None at the moment.
+
+## CharTypeTest.java
+1. What is the knowledge point of the test? Where is the offical document to the knowledge point?
+The knowledge point of the test is to be able to use the correct escape sequences characters.
+Official Document: https://docs.oracle.com/javase/tutorial/java/data/characters.html
+
+2. Why the test failed at first?
+The values in the test class were blank and do not match the expected converted values in the EscapedChars enumeration file.
+
+3. Why you corrected the test that way?
+To handle all errors encountered and be able to use escaped characters for the test.
+
+4. Do you have further questions on this knowledge point?
+None at the moment.
+
+## FloatingTypeTest.java
+1. What is the knowledge point of the test? Where is the offical document to the knowledge point?
+The knowledge point of the test is to be able to cast float numbers to integers; use the Math class; and throw exceptions.
+Official Document: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
+https://docs.oracle.com/javase/tutorial/java/data/numberclasses.html
+
+2. Why the test failed at first?
+The values in the test class do not match the converted values of floating numbers to integer and methods were empty.
+
+3. Why you corrected the test that way?
+To handle all errors encountered and be able to use cast primitive data types.
+
+4. Do you have further questions on this knowledge point?
+
+## IntegerTypeTest.java
+1. What is the knowledge point of the test? Where is the offical document to the knowledge point?
+The knowledge point of the test is to be able to use the standard fields of class Integer and casting int to byte.
+
+Documents:
+https://docs.oracle.com/javase/tutorial/java/data/numberclasses.html
+https://docs.oracle.com/javase/tutorial/java/data/beyondmath.html
+https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html
+
+2. Why the test failed at first?
+The values in the test class does not use Integer class fields and methods were empty.
+
+3. Why you corrected the test that way?
+To handle all errors encountered and be able to use the Integer class fields for the test.
+
+4. Do you have further questions on this knowledge point?
+None at this point.
+

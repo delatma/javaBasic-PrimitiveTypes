@@ -114,10 +114,9 @@ class IntegerTypeTest {
         final double result2 = 2 * 5 / 3;
         // TODO: please modify the following lines to pass the test
         // <!--start
-        final double expectedResult1 = 0.0;
-        final double expectedResult2 = 3.0;
+        final double expectedResult1 = (int)result1;
+        final double expectedResult2 = (int)result2;
         // --end-->
-
         assertEquals(expectedResult1, result1, +1.0E-05);
         assertEquals(expectedResult2, result2, +1.0E-05);
     }
@@ -126,10 +125,9 @@ class IntegerTypeTest {
     void should_truncate_number_when_casting() {
         final int integer = 0x0123_4567;
         final short smallerInteger = (short)integer;
-
         // TODO: please modify the following lines to pass the test
         // <!--start
-        final short expected = (short)integer;
+        final short expected = 17767;;
         // --end-->
 
         assertEquals(expected, smallerInteger);
